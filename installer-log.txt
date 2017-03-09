@@ -1,0 +1,152 @@
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP1 START @ 06:52:27
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+VERSION:	1.1.34
+PHP:		5.6.29 | SAPI: apache2handler
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache
+DOC ROOT:	D:/www/OpenServer/domains/copywp
+DOC ROOT 755:	true
+LOG FILE 644:	true
+BUILD NAME:	20170309_lesson1_58c179365212c6709170309154806
+REQUEST URL:	http://copywp.dev/installer.php
+
+********************************************************************************
+ARCHIVE SETUP
+********************************************************************************
+NAME:	20170309_lesson1_58c179365212c6709170309154806_archive.zip
+SIZE:	20.9MB
+ZIP:	Enabled (ZipArchive Support)
+
+EXTRACTING
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 3414
+    [filename] => D:\www\OpenServer\domains\copywp\20170309_lesson1_58c179365212c6709170309154806_archive.zip
+    [comment] => 
+)
+File timestamp set to Current: 2017-03-09 18:53:27
+COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.170309185327.orig
+- Reset of .htaccess/web.config files
+
+UPDATED FILES:
+- SQL FILE:  'D:/www/OpenServer/domains/copywp/installer-data.sql'
+- WP-CONFIG: 'D:/www/OpenServer/domains/copywp/wp-config.php' (if present)
+
+ARCHIVE RUNTIME: 60.3253 sec.
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+--------------------------------------
+SERVER ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.5.53 -- Build Server: 5.5.53
+FILE SIZE:	database.sql (660.24KB) - installer-data.sql (660.24KB)
+TIMEOUT:	5000
+MAXPACK:	33554432
+SQLMODE:	NOT_SET
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+DROP TABLE:	
+QUERIES RAN:	321
+
+wp_cf7dbplugin_st: (1)
+wp_cf7dbplugin_submits: (7)
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (1)
+wp_links: (0)
+wp_options: (218)
+wp_postmeta: (36)
+wp_posts: (12)
+wp_term_relationships: (4)
+wp_term_taxonomy: (2)
+wp_termmeta: (0)
+wp_terms: (2)
+wp_usermeta: (19)
+wp_users: (1)
+Removed '31' cache/transient rows
+
+SECTION RUNTIME: 2.4443 sec.
+
+********************************************************************************
+STEP1 COMPLETE @ 06:53:29 - TOTAL RUNTIME: 62.8705 sec.
+********************************************************************************
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP2 START @ 07:10:19
+NOTICE: Do not post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	utf8
+CHARSET CLIENT:	 utf8 
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_cf7dbplugin_st~ (1)
+wp_cf7dbplugin_submits~ (7)
+wp_commentmeta^ (0)
+wp_comments~ (1)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (185)
+wp_postmeta~ (36)
+wp_posts~ (12)
+wp_term_relationships~ (4)
+wp_term_taxonomy~ (2)
+wp_termmeta^ (0)
+wp_terms~ (2)
+wp_usermeta~ (19)
+wp_users~ (1)
+--------------------------------------
+Search1:	'http://soft-group.lessons' 
+Change1:	'http://copywp.dev' 
+Search2:	'D:/www/OpenServer/domains/sglessons' 
+Change2:	'D:/www/OpenServer/domains/copywp' 
+Search3:	'http:\/\/soft-group.lessons' 
+Change3:	'http:\/\/copywp.dev' 
+Search4:	'D:\/www\/OpenServer\/domains\/sglessons' 
+Change4:	'D:\/www\/OpenServer\/domains\/copywp' 
+Search5:	'D%3A%2Fwww%2FOpenServer%2Fdomains%2Fsglessons%2F' 
+Change5:	'D%3A%2Fwww%2FOpenServer%2Fdomains%2Fcopywp%2F' 
+Search6:	'http%3A%2F%2Fsoft-group.lessons' 
+Change6:	'http%3A%2F%2Fcopywp.dev' 
+Search7:	'D:\www\OpenServer\domains\sglessons' 
+Change7:	'D:/www/OpenServer/domains/copywp' 
+SCANNED:	Tables:15 	|	 Rows:270 	|	 Cells:1336 
+UPDATED:	Tables:1 	|	 Rows:17 	|	 Cells:19 
+ERRORS:		0 
+RUNTIME:	0.369100 sec
+
+********************************************************************************
+START FINAL CLEANUP: 07:10:20
+********************************************************************************
+UPDATE `wp_blogs` SET domain = 'copywp.dev' WHERE domain = 'soft-group.lessons'
+
+--------------------------------------
+NOTICES
+--------------------------------------
+No Notices Found
+
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+created basic .htaccess file.  If using IIS web.config this process will need to be done manually.
+********************************************************************************
+STEP 2 COMPLETE @ 07:10:20 - TOTAL RUNTIME: 0.4608 sec.
+********************************************************************************
